@@ -1,0 +1,12 @@
+Feature: Auth Login Securities
+
+    Investor want to buy specific stock's in securities account
+    
+    Scenario: Account has Login with Username and Password
+    Given I am on the homepage 
+    When I click Start “Trading Button”
+	And I navigate to the “stockbit.com/#/securities/auth” page
+	And I click on the “Login Button”
+	And I Insert the 6 digit pin trading 
+    Then I should be on the “Securities Account” page
+
